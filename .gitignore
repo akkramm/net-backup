@@ -1,0 +1,16 @@
+# Secrets
+.env
+
+# Device configs can contain passwords, SNMP strings and keys: never publish them
+backups/*
+!backups/.gitkeep
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# IDEs
+.idea/
+.vscode/
