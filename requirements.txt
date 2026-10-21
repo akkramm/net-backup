@@ -1,3 +1,5 @@
 netmiko
+# Lab IOS images only offer SHA-1 key exchange, which paramiko 5+ removed
+paramiko>=3.5.1,<5
 PyYAML
 python-dotenv

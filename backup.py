@@ -79,8 +79,8 @@ def backup_device(device, creds):
         return "OK", str(out_file.relative_to(BASE_DIR))
     except NetmikoAuthenticationException:
         return "FAILED", "authentication failed"
-    except NetmikoTimeoutException:
-        return "FAILED", "connection timed out"
+    except NetmikoTimeoutException as exc:
+        return "FAILED", f"connection problem: {str(exc).replace(chr(10), ' ')[:120]}"
     except Exception as exc:  # keep one bad device from stopping the run
         return "FAILED", f"{type(exc).__name__}: {exc}"
 

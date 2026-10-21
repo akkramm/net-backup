@@ -1,11 +1,11 @@
 # Replace these with the management IPs of your EVE-NG devices.
 devices:
   - name: R1
-    host: 192.168.100.11
+    host: 192.168.1.11
     device_type: cisco_ios
   - name: R2
-    host: 192.168.100.12
+    host: 192.168.1.12
     device_type: cisco_ios
   - name: SW1
-    host: 192.168.100.21
+    host: 192.168.1.100
     device_type: cisco_ios
